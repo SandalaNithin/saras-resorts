@@ -3,18 +3,32 @@
 import Link from 'next/link';
 import { useState } from 'react';
 import {
-  TreePalm,
   Phone,
   Mail,
   MapPin,
   Instagram,
-  Facebook,
-  Twitter,
   Youtube,
   Send,
   CheckCircle2,
 } from 'lucide-react';
 import { navLinks, siteConfig } from '@/constants/site';
+import { Logo } from './Logo';
+
+function XIcon(props: React.SVGProps<SVGSVGElement>) {
+  return (
+    <svg viewBox="0 0 24 24" fill="currentColor" {...props}>
+      <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+    </svg>
+  );
+}
+
+function PinterestIcon(props: React.SVGProps<SVGSVGElement>) {
+  return (
+    <svg viewBox="0 0 24 24" fill="currentColor" {...props}>
+      <path d="M12 0a12 12 0 0 0-4.373 23.178c-.035-.933-.001-2.055.231-3.07.25-1.083 1.673-7.087 1.673-7.087s-.427-.855-.427-2.118c0-1.984 1.15-3.467 2.581-3.467 1.218 0 1.805.914 1.805 2.01 0 1.224-.779 3.053-1.18 4.748-.336 1.418.711 2.573 2.108 2.573 2.53 0 4.474-2.669 4.474-6.52 0-3.41-2.451-5.794-5.951-5.794-4.053 0-6.432 3.041-6.432 6.185 0 1.225.472 2.539 1.06 3.253a.426.426 0 0 1 .098.408c-.108.45-.348 1.418-.395 1.616-.062.259-.205.314-.473.19-1.766-.822-2.87-3.403-2.87-5.475 0-4.458 3.239-8.552 9.334-8.552 4.901 0 8.71 3.492 8.71 8.16 0 4.868-3.07 8.786-7.331 8.786-1.431 0-2.777-.744-3.238-1.623l-.881 3.36c-.319 1.226-1.18 2.763-1.757 3.7A12 12 0 1 0 12 0z" />
+    </svg>
+  );
+}
 
 export function Footer() {
   const [email, setEmail] = useState('');
@@ -34,26 +48,16 @@ export function Footer() {
       <div className="container py-16 lg:py-20">
         <div className="grid gap-12 lg:grid-cols-12">
           <div className="lg:col-span-4">
-            <Link href="/" className="flex items-center gap-2.5">
-              <span className="flex h-10 w-10 items-center justify-center rounded-full border border-gold-400/60 text-gold-300">
-                <TreePalm className="h-5 w-5" />
-              </span>
-              <span className="flex flex-col leading-none">
-                <span className="font-serif text-xl font-semibold text-white">Saras</span>
-                <span className="text-[10px] uppercase tracking-[0.25em] text-gold-300">
-                  Resorts
-                </span>
-              </span>
-            </Link>
+            <Logo variant="dark" size="lg" flourish />
             <p className="mt-5 max-w-sm text-sm leading-relaxed text-cream-100/70">
               {siteConfig.description}
             </p>
             <div className="mt-6 flex gap-3">
               {[
                 { icon: Instagram, href: siteConfig.social.instagram, label: 'Instagram' },
-                { icon: Facebook, href: siteConfig.social.facebook, label: 'Facebook' },
-                { icon: Twitter, href: siteConfig.social.twitter, label: 'Twitter' },
+                { icon: XIcon, href: siteConfig.social.twitter, label: 'X (Twitter)' },
                 { icon: Youtube, href: siteConfig.social.youtube, label: 'YouTube' },
+                { icon: PinterestIcon, href: siteConfig.social.pinterest, label: 'Pinterest' },
               ].map((s) => (
                 <a
                   key={s.label}

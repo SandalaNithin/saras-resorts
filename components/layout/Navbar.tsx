@@ -3,9 +3,10 @@
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useEffect, useState } from 'react';
-import { Menu, X, TreePalm, Phone } from 'lucide-react';
+import { Menu, X, Phone } from 'lucide-react';
 import { navLinks, siteConfig } from '@/constants/site';
 import { cn } from '@/lib/utils';
+import { Logo } from './Logo';
 
 export function Navbar() {
   const pathname = usePathname();
@@ -43,34 +44,7 @@ export function Navbar() {
       )}
     >
       <nav className="container flex h-20 items-center justify-between">
-        <Link href="/" className="flex items-center gap-2.5" aria-label={siteConfig.name}>
-          <span
-            className={cn(
-              'flex h-10 w-10 items-center justify-center rounded-full border transition-colors',
-              solid ? 'border-forest-800 text-forest-800' : 'border-white/70 text-white'
-            )}
-          >
-            <TreePalm className="h-5 w-5" />
-          </span>
-          <span className="flex flex-col leading-none">
-            <span
-              className={cn(
-                'font-serif text-xl font-semibold tracking-wide transition-colors',
-                solid ? 'text-forest-800' : 'text-white'
-              )}
-            >
-              Saras
-            </span>
-            <span
-              className={cn(
-                'text-[10px] uppercase tracking-[0.25em] transition-colors',
-                solid ? 'text-gold-600' : 'text-gold-300'
-              )}
-            >
-              Resorts
-            </span>
-          </span>
-        </Link>
+        <Logo variant={solid ? 'light' : 'dark'} />
 
         <ul className="hidden items-center gap-1 lg:flex">
           {navLinks.map((link) => {

@@ -22,7 +22,7 @@ export default function LocationPage() {
         eyebrow="Find Us"
         title="How to Reach Saras"
         description="Conveniently located in Peddapur, Telangana — a short, scenic drive from Hyderabad."
-        image="https://images.unsplash.com/photo-1505691938895-1758d1c5d1f4?auto=format&fit=crop&w=1920&q=80"
+        image="/images/lake-view-at-sunset.jpg"
       />
 
       <section className="section-py bg-cream-100">

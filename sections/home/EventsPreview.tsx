@@ -16,7 +16,7 @@ export function EventsPreview() {
         />
 
         <Stagger className="mt-14 grid gap-6 md:grid-cols-2 lg:grid-cols-3" stagger={0.12}>
-          {eventTypes.slice(0, 5).map((event) => (
+          {eventTypes.map((event) => (
             <StaggerItem key={event.title}>
               <article className="group relative h-full overflow-hidden rounded-3xl shadow-soft">
                 <div className="relative aspect-[4/5] w-full overflow-hidden">

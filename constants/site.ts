@@ -29,10 +29,10 @@ export const siteConfig = {
     reception: '24 Hours',
   },
   social: {
-    instagram: 'https://instagram.com',
-    facebook: 'https://facebook.com',
-    twitter: 'https://twitter.com',
-    youtube: 'https://youtube.com',
+    instagram: 'https://www.instagram.com/sarasresorts/?hl=en',
+    twitter: 'https://x.com/sarasresorts',
+    youtube: 'https://www.youtube.com/@sarasresorts',
+    pinterest: 'https://in.pinterest.com/sarasresorts/',
   },
   mapEmbed:
     'https://www.google.com/maps?q=Peddapur,Telangana,502306&output=embed',

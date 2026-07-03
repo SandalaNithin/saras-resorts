@@ -102,8 +102,7 @@ export const eventTypes: EventType[] = [
     title: 'Pre-Wedding',
     description:
       'Romantic backdrops for haldi, mehndi, engagement and couple shoots across our scenic gardens.',
-    image:
-      'https://images.unsplash.com/photo-1606800052052-a08af5148c8d?auto=format&fit=crop&w=1200&q=80',
+    image: '/images/pre-wedding.jpg',
     features: ['Couple shoot', 'Mehndi lawn', 'Haldi setup', 'Candid photography'],
   },
   {
@@ -111,8 +110,7 @@ export const eventTypes: EventType[] = [
     title: 'Corporate Events',
     description:
       'Off-sites, conferences and team-building retreats with full AV support and seamless catering.',
-    image:
-      'https://images.unsplash.com/photo-1511578314322-37984718f320?auto=format&fit=crop&w=1200&q=80',
+    image: '/images/corporate-events.jpg',
     features: ['200-seat hall', 'AV systems', 'Breakout rooms', 'Tea breaks'],
   },
   {
@@ -129,8 +127,7 @@ export const eventTypes: EventType[] = [
     title: 'Family Gatherings',
     description:
       'Reunions, anniversaries and kitty parties in a warm, private and spacious setting.',
-    image:
-      'https://images.unsplash.com/photo-1529543544282-ea669957c28c?auto=format&fit=crop&w=1200&q=80',
+    image: '/images/family-gatherings.jpg',
     features: ['Private dining', 'Custom menu', 'Lawn access', 'Photo corner'],
   },
   {
@@ -138,8 +135,7 @@ export const eventTypes: EventType[] = [
     title: 'Weekend Getaways',
     description:
       'Curated weekend packages with activities, bonfires and a relaxed nature escape.',
-    image:
-      'https://images.unsplash.com/photo-1520250497591-112f99f6a3d0?auto=format&fit=crop&w=1200&q=80',
+    image: '/images/weekend-getaways.jpg',
     features: ['Bonfire night', 'Nature walk', 'Adventure sports', 'Spa session'],
   },
 ];
@@ -166,10 +162,9 @@ export const rooms: Room[] = [
     description:
       'A serene 320 sq.ft. retreat opening onto landscaped gardens, featuring a plush king bed, rain shower and a private sit-out.',
     price: '₹4,999',
-    image:
-      'https://images.unsplash.com/photo-1631049307264-da0ec9d70395?auto=format&fit=crop&w=1200&q=80',
+    image: '/images/deluxe-garden-room.jpg',
     gallery: [
-      'https://images.unsplash.com/photo-1631049307264-da0ec9d70395?auto=format&fit=crop&w=1200&q=80',
+      '/images/deluxe-garden-room.jpg',
       'https://images.unsplash.com/photo-1582719478250-c89cae40dc85?auto=format&fit=crop&w=1200&q=80',
       'https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1200&q=80',
     ],
@@ -204,10 +199,9 @@ export const rooms: Room[] = [
     description:
       'A sprawling 720 sq.ft. villa with two bedrooms, a private lawn, outdoor seating and a dedicated butler on call.',
     price: '₹11,999',
-    image:
-      'https://images.unsplash.com/photo-1568084680786-a84f91d5537b?auto=format&fit=crop&w=1200&q=80',
+    image: '/images/family-garden-villa.jpg',
     gallery: [
-      'https://images.unsplash.com/photo-1568084680786-a84f91d5537b?auto=format&fit=crop&w=1200&q=80',
+      '/images/family-garden-villa.jpg',
       'https://images.unsplash.com/photo-1564501049412-61c2a3083791?auto=format&fit=crop&w=1200&q=80',
       'https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?auto=format&fit=crop&w=1200&q=80',
     ],
@@ -223,10 +217,9 @@ export const rooms: Room[] = [
     description:
       'Our flagship 1100 sq.ft. suite with a private plunge pool, wraparound deck, dining room and panoramic forest views.',
     price: '₹18,999',
-    image:
-      'https://images.unsplash.com/photo-1590490360182-c33d57733415?auto=format&fit=crop&w=1200&q=80',
+    image: '/images/presidential-suite.jpg',
     gallery: [
-      'https://images.unsplash.com/photo-1590490360182-c33d57733415?auto=format&fit=crop&w=1200&q=80',
+      '/images/presidential-suite.jpg',
       'https://images.unsplash.com/photo-1582719478250-c89cae40dc85?auto=format&fit=crop&w=1200&q=80',
       'https://images.unsplash.com/photo-1611892440504-42a792e24d32?auto=format&fit=crop&w=1200&q=80',
     ],
@@ -252,17 +245,17 @@ export const galleryItems: GalleryItem[] = [
     span: true,
   },
   {
-    src: 'https://images.unsplash.com/photo-1631049307264-da0ec9d70395?auto=format&fit=crop&w=1200&q=80',
-    alt: 'Deluxe room interior',
+    src: '/images/deluxe-garden-room.jpg',
+    alt: 'Deluxe Garden Room interior',
     category: 'Rooms',
   },
   {
-    src: 'https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&w=1200&q=80',
-    alt: 'Wedding setup',
+    src: '/images/pre-wedding.jpg',
+    alt: 'Pre-wedding celebration',
     category: 'Events',
   },
   {
-    src: 'https://images.unsplash.com/photo-1414235077428-338989332540?auto=format&fit=crop&w=1200&q=80',
+    src: '/images/fine-dining-plate.jpg',
     alt: 'Fine dining plate',
     category: 'Food',
   },
@@ -273,39 +266,49 @@ export const galleryItems: GalleryItem[] = [
     span: true,
   },
   {
-    src: 'https://images.unsplash.com/photo-1445019940545-be00c92a6d9b?auto=format&fit=crop&w=1200&q=80',
+    src: '/images/forest-landscape.jpg',
     alt: 'Forest landscape',
     category: 'Nature',
   },
   {
-    src: 'https://images.unsplash.com/photo-1611892440504-42a792e24d32?auto=format&fit=crop&w=1200&q=80',
-    alt: 'Suite living area',
+    src: '/images/presidential-suite.jpg',
+    alt: 'Presidential Suite living area',
     category: 'Rooms',
   },
   {
-    src: 'https://images.unsplash.com/photo-1530103862676-de8c9debad1d?auto=format&fit=crop&w=1200&q=80',
-    alt: 'Birthday celebration',
+    src: '/images/corporate-events.jpg',
+    alt: 'Corporate event in session',
     category: 'Events',
   },
   {
-    src: 'https://images.unsplash.com/photo-1551218808-94e33e0c3112?auto=format&fit=crop&w=1200&q=80',
+    src: '/images/restaurant-ambience.jpg',
     alt: 'Restaurant ambience',
     category: 'Food',
   },
   {
-    src: 'https://images.unsplash.com/photo-1575429198301-9c1a3c5b2a3e?auto=format&fit=crop&w=1200&q=80',
+    src: '/images/conference-hall.jpg',
     alt: 'Conference hall',
     category: 'Amenities',
   },
   {
-    src: 'https://images.unsplash.com/photo-1505691938895-1758d1c5d1f4?auto=format&fit=crop&w=1200&q=80',
+    src: '/images/lake-view-at-sunset.jpg',
     alt: 'Lake view at sunset',
     category: 'Nature',
   },
   {
-    src: 'https://images.unsplash.com/photo-1564501049412-61c2a3083791?auto=format&fit=crop&w=1200&q=80',
-    alt: 'Villa bedroom',
+    src: '/images/family-garden-villa.jpg',
+    alt: 'Family Garden Villa bedroom',
     category: 'Rooms',
+  },
+  {
+    src: '/images/family-gatherings.jpg',
+    alt: 'Family gathering celebration',
+    category: 'Events',
+  },
+  {
+    src: '/images/weekend-getaways.jpg',
+    alt: 'Weekend getaway by the water',
+    category: 'Events',
   },
 ];
 
@@ -460,25 +463,25 @@ export const nearbyAttractions: NearbyAttraction[] = [
     name: 'Sri Lakshmi Narasimha Temple',
     distance: '8 km',
     description: 'A historic hilltop temple with panoramic valley views.',
-    image: 'https://images.unsplash.com/photo-1542884748-2b87b36c6b90?auto=format&fit=crop&w=800&q=80',
+    image: '/images/lakshmi-narasimha-temple.jpg',
   },
   {
     name: 'Manjeera Wildlife Sanctuary',
     distance: '22 km',
     description: 'Wetland reserve home to migratory birds and crocodiles.',
-    image: 'https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=800&q=80',
+    image: '/images/manjeera-wildlife-sanctuary.jpg',
   },
   {
     name: 'Sangameshwar Temple',
     distance: '15 km',
     description: 'Ancient confluence temple at the meeting of two rivers.',
-    image: 'https://images.unsplash.com/photo-1564507592333-c6062eea5778?auto=format&fit=crop&w=800&q=80',
+    image: '/images/sangameshwar-temple.jpg',
   },
   {
     name: 'Kondapur Fort',
     distance: '30 km',
     description: 'Scenic hill fort ideal for a morning trek and photography.',
-    image: 'https://images.unsplash.com/photo-1464822759023-fed622ff217c?auto=format&fit=crop&w=800&q=80',
+    image: '/images/kondapur-fort.jpg',
   },
 ];
 

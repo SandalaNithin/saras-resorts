@@ -20,8 +20,8 @@ export function AboutPreview() {
             <div className="relative overflow-hidden rounded-3xl shadow-soft-lg">
               <div className="relative aspect-[4/5] w-full">
                 <Image
-                  src="https://images.unsplash.com/photo-1582719508461-5d28e05d5d31?auto=format&fit=crop&w=1000&q=80"
-                  alt="Saras Resorts architecture and gardens"
+                  src="/images/a-sanctuary-crafted-around-nature.jpg"
+                  alt="Saras Resorts architecture and lakeside gardens"
                   fill
                   sizes="(max-width: 1024px) 100vw, 50vw"
                   className="object-cover"

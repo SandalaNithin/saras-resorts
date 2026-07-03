@@ -20,7 +20,7 @@ export default function GalleryPage() {
         eyebrow="Moments at Saras"
         title="Gallery"
         description="A visual journey through our gardens, rooms, celebrations, cuisine and amenities."
-        image="https://images.unsplash.com/photo-1505691938895-1758d1c5d1f4?auto=format&fit=crop&w=1920&q=80"
+        image="/images/lake-view-at-sunset.jpg"
       />
 
       <section className="section-py bg-cream-100">
