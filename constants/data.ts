@@ -314,59 +314,6 @@ export const galleryItems: GalleryItem[] = [
 
 export const galleryCategories = ['All', 'Nature', 'Rooms', 'Events', 'Food', 'Amenities'] as const;
 
-export type Testimonial = {
-  name: string;
-  location: string;
-  rating: number;
-  text: string;
-  avatar: string;
-};
-
-export const testimonials: Testimonial[] = [
-  {
-    name: 'Ananya Reddy',
-    location: 'Hyderabad',
-    rating: 5,
-    text: 'An absolutely magical stay. The gardens are breathtaking and the service is impeccable. We hosted our wedding here and every guest was blown away.',
-    avatar: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=200&q=80',
-  },
-  {
-    name: 'Rajesh Kumar',
-    location: 'Bengaluru',
-    rating: 5,
-    text: 'Perfect weekend getaway from the city chaos. The Presidential Suite with a private plunge pool was worth every rupee. Highly recommended.',
-    avatar: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=200&q=80',
-  },
-  {
-    name: 'Priya Sharma',
-    location: 'Mumbai',
-    rating: 5,
-    text: 'We had our corporate off-site here. The conference facilities were top-notch and the team-building activities were beautifully organised.',
-    avatar: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=200&q=80',
-  },
-  {
-    name: 'Vikram Naidu',
-    location: 'Warangal',
-    rating: 5,
-    text: 'The food was exceptional and the staff treated us like family. My kids loved the play area and the pool. We are coming back for sure.',
-    avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=200&q=80',
-  },
-  {
-    name: 'Sneha Iyer',
-    location: 'Chennai',
-    rating: 5,
-    text: 'A hidden gem in Telangana. The sunrise over the lake is unforgettable. The spa session was the most relaxing I have had in years.',
-    avatar: 'https://images.unsplash.com/photo-1534528741775-3d8344d6e0b3?auto=format&fit=crop&w=200&q=80',
-  },
-  {
-    name: 'Arjun Mehta',
-    location: 'Pune',
-    rating: 5,
-    text: 'Hosted my parents 50th anniversary here. The decor, the private dining and the attention to detail were beyond our expectations.',
-    avatar: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=200&q=80',
-  },
-];
-
 export type Stat = {
   value: string;
   label: string;

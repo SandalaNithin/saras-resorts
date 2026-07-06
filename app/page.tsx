@@ -4,7 +4,6 @@ import { AccommodationPreview } from '@/sections/home/AccommodationPreview';
 import { EventsPreview } from '@/sections/home/EventsPreview';
 import { AmenitiesPreview } from '@/sections/home/AmenitiesPreview';
 import { GalleryPreview } from '@/sections/home/GalleryPreview';
-import { Testimonials } from '@/sections/home/Testimonials';
 import { CTABanner } from '@/sections/home/CTABanner';
 import { siteConfig } from '@/constants/site';
 
@@ -38,7 +37,6 @@ export default function Home() {
       <EventsPreview />
       <AmenitiesPreview />
       <GalleryPreview />
-      <Testimonials />
       <CTABanner />
     </>
   );

@@ -3,7 +3,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
-import { ChevronDown, Star } from 'lucide-react';
+import { ChevronDown, Star, Sparkles } from 'lucide-react';
 import { siteConfig } from '@/constants/site';
 
 export function Hero() {
@@ -28,15 +28,27 @@ export function Hero() {
       </div>
 
       <div className="container relative z-10 py-32 text-center">
-        <span
-          className={`inline-flex items-center gap-2 rounded-full border border-white/25 bg-white/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.25em] text-gold-300 backdrop-blur-sm transition-all duration-700 ${
-            mounted ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-5'
-          }`}
-          style={{ transitionDelay: '200ms' }}
-        >
-          <Star className="h-3.5 w-3.5 fill-gold-300" />
-          Premium Luxury Resort
-        </span>
+        <div className="flex flex-col items-center gap-3">
+          <span
+            className={`inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-gold-500 to-gold-400 px-5 py-2 text-xs font-bold uppercase tracking-[0.3em] text-forest-950 shadow-gold transition-all duration-700 ${
+              mounted ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-5'
+            }`}
+            style={{ transitionDelay: '100ms' }}
+          >
+            <Sparkles className="h-3.5 w-3.5" />
+            Opening Soon
+          </span>
+
+          <span
+            className={`inline-flex items-center gap-2 rounded-full border border-white/25 bg-white/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.25em] text-gold-300 backdrop-blur-sm transition-all duration-700 ${
+              mounted ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-5'
+            }`}
+            style={{ transitionDelay: '200ms' }}
+          >
+            <Star className="h-3.5 w-3.5 fill-gold-300" />
+            Premium Luxury Resort
+          </span>
+        </div>
 
         <h1
           className={`mx-auto mt-6 max-w-4xl font-serif text-4xl font-semibold leading-[1.1] text-white text-shadow-hero sm:text-5xl md:text-6xl lg:text-7xl transition-all duration-700 ${

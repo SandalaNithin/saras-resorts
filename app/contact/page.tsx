@@ -68,9 +68,6 @@ export default function ContactPage() {
                         <p className="mt-1 text-sm text-forest-700/80">
                           {siteConfig.contact.phone}
                         </p>
-                        <p className="text-sm text-forest-700/80">
-                          {siteConfig.contact.altPhone}
-                        </p>
                       </div>
                     </li>
                     <li className="flex gap-4">
@@ -83,9 +80,6 @@ export default function ContactPage() {
                         </p>
                         <p className="mt-1 text-sm text-forest-700/80">
                           {siteConfig.contact.email}
-                        </p>
-                        <p className="text-sm text-forest-700/80">
-                          {siteConfig.contact.reservations}
                         </p>
                       </div>
                     </li>

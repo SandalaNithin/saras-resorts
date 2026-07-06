@@ -17,11 +17,9 @@ export const siteConfig = {
     full: 'Saraswathi Enclave, Peddapur, Telangana 502306, India',
   },
   contact: {
-    phone: '+91 98765 43210',
-    phoneHref: '+919876543210',
-    altPhone: '+91 91234 56789',
-    email: 'stay@sarasresorts.in',
-    reservations: 'reservations@sarasresorts.in',
+    phone: '+91 99897 95335',
+    phoneHref: '+919989795335',
+    email: 'sarasresorts@gmail.com',
   },
   hours: {
     checkIn: '12:00 PM',
